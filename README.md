@@ -7,7 +7,7 @@ Do it without metasploitiploiti-ti
 Set your terminal or comment it and put your own listener.
 Execute the bash script and done.
 
-If you wanna say something dirty, please. @BlackP4nd4. 
+If you wanna say me something dirty, please. @BlackP4nd4. 
 
 //
 
