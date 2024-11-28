@@ -26,6 +26,7 @@ get_terminal() {
         ppid=$(ps -p "$ppid" -o ppid= | tr -d ' ')
     done
     echo "Unknown terminal"
+    exit 1
 }
 
 payload=''
